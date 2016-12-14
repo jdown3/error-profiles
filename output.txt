@@ -1,0 +1,3632 @@
+
+Line number 2
+Sequence number 0
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A29G
+
+AG found:  A29G
+
+AT found:  A29T
+
+CT found:  C29T
+
+CT found:  C26T
+
+Line number 6
+Sequence number 2
+
+AC found:  A88C
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A88C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A87C
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A88G
+
+AG found:  A1G
+
+AG found:  A88G
+
+AG found:  A1C87G
+
+AG found:  A1G
+
+AG found:  A2G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A86C1G
+
+AG found:  A88G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A87G
+
+AG found:  A2G
+
+AG found:  A1C1G
+
+AT found:  A88T
+
+AT found:  A1T
+
+AT found:  A88T
+
+AT found:  A88T
+
+AT found:  A88T
+
+AT found:  A88T
+
+AT found:  A1C87T
+
+AT found:  A1T
+
+AT found:  A1G87T
+
+AT found:  A1T
+
+AT found:  A1C87T
+
+AT found:  A2T
+
+AT found:  A1G87T
+
+AT found:  A1T
+
+AT found:  A86C1G1T
+
+AT found:  A87C1T
+
+AT found:  A1C1T
+
+AT found:  A1T
+
+AT found:  A88T
+
+AT found:  A1T
+
+AT found:  A88T
+
+AT found:  A88T
+
+AT found:  A1G1T
+
+AT found:  A1T
+
+AT found:  A1G87T
+
+AT found:  A87G1T
+
+AT found:  A2G86T
+
+AT found:  A1C1G86T
+
+CG found:  C87G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CT found:  C88T
+
+CT found:  C88T
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C87T
+
+CT found:  C88T
+
+CT found:  C2T
+
+CT found:  C87T
+
+CT found:  C1T
+
+CT found:  C1G1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1G87T
+
+CT found:  C88T
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C88T
+
+CT found:  C1G87T
+
+CT found:  C1G86T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G88T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G86T
+
+GT found:  G88T
+
+GT found:  G87T
+
+GT found:  G88T
+
+GT found:  G86T
+
+Line number 10
+Sequence number 2
+
+AG found:  A72G
+
+AG found:  A1G
+
+AT found:  A72T
+
+AT found:  A1T
+
+CT found:  C1T
+
+Line number 14
+Sequence number 4
+
+AC found:  A62C
+
+AC found:  A62C
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A62T
+
+AT found:  A62T
+
+AT found:  A1G61T
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C62T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C62T
+
+GT found:  G62T
+
+GT found:  G61T
+
+GT found:  G1T
+
+GT found:  G61T
+
+Line number 18
+Sequence number 4
+
+Line number 22
+Sequence number 6
+
+CT found:  C34T
+
+CT found:  C34T
+
+GT found:  G34T
+
+Line number 26
+Sequence number 6
+
+AC found:  A1C
+
+AG found:  A47G
+
+AT found:  A1T
+
+AT found:  A47T
+
+Line number 30
+Sequence number 8
+
+AC found:  A108C
+
+CG found:  C1G
+
+CT found:  C1T
+
+Line number 34
+Sequence number 8
+
+CT found:  C67T
+
+CT found:  C1T
+
+Line number 38
+Sequence number 10
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A107C
+
+AC found:  A1C
+
+AC found:  A107C
+
+AC found:  A1C
+
+AG found:  A2G
+
+AG found:  A108G
+
+AG found:  A108G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A107C1G
+
+AG found:  A1G
+
+AT found:  A1T
+
+AT found:  A108T
+
+AT found:  A107C1T
+
+AT found:  A1C107T
+
+AT found:  A108T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C108G
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C108T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C108T
+
+CT found:  C1T
+
+CT found:  C107T
+
+CT found:  C1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G108T
+
+GT found:  G108T
+
+GT found:  G108T
+
+GT found:  G108T
+
+GT found:  G107T
+
+GT found:  G107T
+
+GT found:  G3T
+
+GT found:  G1T
+
+Line number 42
+Sequence number 10
+
+AT found:  A85T
+
+CT found:  C85T
+
+Line number 46
+Sequence number 12
+
+AC found:  A2C
+
+AG found:  A84G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A84T
+
+AT found:  A1G83T
+
+GT found:  G83T
+
+GT found:  G1T
+
+Line number 50
+Sequence number 12
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A1T
+
+CG found:  C58G
+
+CT found:  C58T
+
+CT found:  C58T
+
+CT found:  C1T
+
+CT found:  C2T
+
+GT found:  G1T
+
+Line number 54
+Sequence number 14
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A1C
+
+AC found:  A80C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A87C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A85C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A2C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AC found:  A86C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A88C
+
+AC found:  A88C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AG found:  A88G
+
+AG found:  A1G
+
+AG found:  A88G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A88G
+
+AG found:  A1G
+
+AG found:  A1C87G
+
+AG found:  A1G
+
+AG found:  A2G
+
+AG found:  A86C1G
+
+AG found:  A1C1G
+
+AG found:  A1G
+
+AG found:  A80C4G
+
+AG found:  A86G
+
+AG found:  A1C87G
+
+AG found:  A88G
+
+AG found:  A1C86G
+
+AG found:  A87C1G
+
+AG found:  A1C87G
+
+AG found:  A88G
+
+AG found:  A85G
+
+AG found:  A1G
+
+AG found:  A1C1G
+
+AG found:  A86C2G
+
+AG found:  A85C1G
+
+AG found:  A1G
+
+AG found:  A1C4G
+
+AG found:  A1G
+
+AG found:  A88G
+
+AG found:  A86C1G
+
+AG found:  A2G
+
+AG found:  A1G
+
+AG found:  A86C1G
+
+AG found:  A2G
+
+AG found:  A2C81G
+
+AG found:  A87G
+
+AG found:  A2G
+
+AG found:  A1C1G
+
+AG found:  A86C1G
+
+AG found:  A1C86G
+
+AG found:  A88G
+
+AG found:  A87G
+
+AG found:  A1G
+
+AG found:  A88G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1C2G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A2G
+
+AG found:  A2C85G
+
+AG found:  A88G
+
+AG found:  A1C1G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A1C1T
+
+AT found:  A2T
+
+AT found:  A1C1T
+
+AT found:  A86C1G1T
+
+AT found:  A1C1G86T
+
+AT found:  A1G4T
+
+AT found:  A1C87T
+
+AT found:  A86C2T
+
+AT found:  A1C87T
+
+AT found:  A80C4G4T
+
+AT found:  A1C86G1T
+
+AT found:  A85G3T
+
+AT found:  A1G2T
+
+AT found:  A1C1G86T
+
+AT found:  A1T
+
+AT found:  A2T
+
+AT found:  A1C87T
+
+AT found:  A1C86T
+
+AT found:  A85C1G2T
+
+AT found:  A1G87T
+
+AT found:  A1C87T
+
+AT found:  A1G87T
+
+AT found:  A86C1G1T
+
+AT found:  A1G4T
+
+AT found:  A86C1G1T
+
+AT found:  A2C1T
+
+AT found:  A2C81G3T
+
+AT found:  A2G86T
+
+AT found:  A1C1G1T
+
+AT found:  A86C1G1T
+
+AT found:  A1T
+
+AT found:  A87G1T
+
+AT found:  A1G2T
+
+AT found:  A88T
+
+AT found:  A1C87T
+
+AT found:  A1C2G1T
+
+AT found:  A1C86T
+
+AT found:  A88T
+
+AT found:  A88T
+
+AT found:  A1G87T
+
+AT found:  A2G86T
+
+AT found:  A2C85G1T
+
+CG found:  C1G
+
+CG found:  C2G
+
+CG found:  C87G
+
+CG found:  C88G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C85G
+
+CG found:  C2G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C2G
+
+CG found:  C4G
+
+CG found:  C87G
+
+CG found:  C86G
+
+CG found:  C86G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C87G
+
+CG found:  C1G
+
+CG found:  C2G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C87G
+
+CG found:  C2G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C87G
+
+CG found:  C1G
+
+CG found:  C86G
+
+CG found:  C4G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C81G
+
+CG found:  C87G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C86G
+
+CG found:  C87G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C2G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C85G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C87T
+
+CT found:  C88T
+
+CT found:  C2G1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C1G1T
+
+CT found:  C85G1T
+
+CT found:  C2G1T
+
+CT found:  C1G87T
+
+CT found:  C1G86T
+
+CT found:  C87T
+
+CT found:  C2T
+
+CT found:  C87T
+
+CT found:  C2G1T
+
+CT found:  C4G4T
+
+CT found:  C86G1T
+
+CT found:  C86G2T
+
+CT found:  C1G87T
+
+CT found:  C2G3T
+
+CT found:  C1G2T
+
+CT found:  C1G86T
+
+CT found:  C1G2T
+
+CT found:  C87T
+
+CT found:  C86T
+
+CT found:  C1G2T
+
+CT found:  C87G1T
+
+CT found:  C86G2T
+
+CT found:  C87T
+
+CT found:  C1G1T
+
+CT found:  C88T
+
+CT found:  C1G1T
+
+CT found:  C1G86T
+
+CT found:  C87T
+
+CT found:  C1T
+
+CT found:  C81G3T
+
+CT found:  C1G1T
+
+CT found:  C1G1T
+
+CT found:  C1T
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C1G1T
+
+CT found:  C1T
+
+CT found:  C1G87T
+
+CT found:  C87T
+
+CT found:  C2G1T
+
+CT found:  C88T
+
+CT found:  C86T
+
+CT found:  C88T
+
+CT found:  C1T
+
+CT found:  C85G1T
+
+CT found:  C1T
+
+CT found:  C1G87T
+
+GT found:  G88T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G87T
+
+GT found:  G3T
+
+GT found:  G88T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G86T
+
+GT found:  G86T
+
+GT found:  G4T
+
+GT found:  G1T
+
+GT found:  G2T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G4T
+
+GT found:  G1T
+
+GT found:  G2T
+
+GT found:  G2T
+
+GT found:  G86T
+
+GT found:  G87T
+
+GT found:  G3T
+
+GT found:  G88T
+
+GT found:  G2T
+
+GT found:  G88T
+
+GT found:  G3T
+
+GT found:  G2T
+
+GT found:  G86T
+
+GT found:  G2T
+
+GT found:  G87T
+
+GT found:  G2T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G2T
+
+GT found:  G2T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G4T
+
+GT found:  G1T
+
+GT found:  G86T
+
+GT found:  G3T
+
+GT found:  G87T
+
+GT found:  G86T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G86T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G2T
+
+GT found:  G1T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G88T
+
+GT found:  G87T
+
+GT found:  G1T
+
+GT found:  G86T
+
+GT found:  G88T
+
+GT found:  G1T
+
+GT found:  G88T
+
+GT found:  G87T
+
+Line number 58
+Sequence number 14
+
+AC found:  A1C
+
+AG found:  A55G
+
+AG found:  A1G
+
+AT found:  A55T
+
+CT found:  C55T
+
+CT found:  C55T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 62
+Sequence number 16
+
+AT found:  A71T
+
+CT found:  C1T
+
+Line number 66
+Sequence number 16
+
+Line number 70
+Sequence number 18
+
+AT found:  A1T
+
+AT found:  A1T
+
+CG found:  C1G
+
+GT found:  G92T
+
+Line number 74
+Sequence number 18
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C82G
+
+CG found:  C1G
+
+CG found:  C82G
+
+CG found:  C82G
+
+CT found:  C82T
+
+CT found:  C82T
+
+CT found:  C82T
+
+CT found:  C82T
+
+CT found:  C82T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G82T
+
+GT found:  G82T
+
+Line number 78
+Sequence number 20
+
+GT found:  G21T
+
+Line number 82
+Sequence number 20
+
+AC found:  A55C
+
+AC found:  A55C
+
+AC found:  A55C
+
+AC found:  A1C
+
+AC found:  A55C
+
+AC found:  A55C
+
+AG found:  A55G
+
+AG found:  A55G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A55T
+
+AT found:  A1T
+
+AT found:  A1G54T
+
+AT found:  A1T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C55G
+
+CG found:  C55G
+
+CG found:  C55G
+
+CG found:  C1G
+
+CT found:  C55T
+
+CT found:  C1G54T
+
+CT found:  C55T
+
+CT found:  C1T
+
+GT found:  G55T
+
+GT found:  G1T
+
+GT found:  G55T
+
+GT found:  G54T
+
+GT found:  G55T
+
+GT found:  G54T
+
+GT found:  G55T
+
+GT found:  G55T
+
+GT found:  G54T
+
+GT found:  G55T
+
+Line number 86
+Sequence number 22
+
+AG found:  A1G
+
+AT found:  A15T
+
+Line number 90
+Sequence number 22
+
+AG found:  A54G
+
+AG found:  A54G
+
+GT found:  G54T
+
+GT found:  G54T
+
+Line number 94
+Sequence number 24
+
+CT found:  C36T
+
+Line number 98
+Sequence number 24
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A1C131T
+
+AT found:  A132T
+
+AT found:  A132T
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C131T
+
+CT found:  C1T
+
+CT found:  C132T
+
+CT found:  C132T
+
+CT found:  C132T
+
+GT found:  G132T
+
+GT found:  G132T
+
+Line number 102
+Sequence number 26
+
+AG found:  A114G
+
+AG found:  A114G
+
+AG found:  A1G
+
+AT found:  A114T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C114G
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G1T
+
+Line number 106
+Sequence number 26
+
+AC found:  A101C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A100G
+
+AG found:  A1G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A101C1T
+
+AT found:  A1T
+
+AT found:  A102T
+
+AT found:  A1C100T
+
+AT found:  A1T
+
+CG found:  C102G
+
+CT found:  C102T
+
+CT found:  C1T
+
+CT found:  C100T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G100T
+
+GT found:  G102T
+
+GT found:  G102T
+
+GT found:  G1T
+
+GT found:  G102T
+
+GT found:  G1T
+
+Line number 110
+Sequence number 28
+
+CT found:  C20T
+
+GT found:  G20T
+
+Line number 114
+Sequence number 28
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A126C
+
+AC found:  A124C
+
+AG found:  A126G
+
+AG found:  A126G
+
+AG found:  A1G
+
+AG found:  A124C1G
+
+AT found:  A126T
+
+AT found:  A1T
+
+AT found:  A126T
+
+AT found:  A126T
+
+AT found:  A126T
+
+AT found:  A1T
+
+AT found:  A124C1G1T
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C126T
+
+CT found:  C126T
+
+CT found:  C1T
+
+CT found:  C1G1T
+
+GT found:  G126T
+
+GT found:  G1T
+
+GT found:  G126T
+
+GT found:  G126T
+
+GT found:  G126T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 118
+Sequence number 30
+
+Line number 122
+Sequence number 30
+
+CT found:  C1T
+
+Line number 126
+Sequence number 32
+
+Line number 130
+Sequence number 32
+
+AC found:  A107C
+
+AC found:  A107C
+
+AG found:  A107G
+
+AG found:  A107G
+
+AT found:  A107T
+
+AT found:  A107T
+
+AT found:  A107T
+
+CG found:  C1G
+
+CG found:  C107G
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C107T
+
+CT found:  C107T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G1T
+
+GT found:  G107T
+
+GT found:  G107T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G107T
+
+GT found:  G107T
+
+Line number 134
+Sequence number 34
+
+AG found:  A115G
+
+AG found:  A115G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+CG found:  C115G
+
+CG found:  C115G
+
+CT found:  C1T
+
+CT found:  C115T
+
+GT found:  G115T
+
+GT found:  G1T
+
+GT found:  G115T
+
+Line number 138
+Sequence number 34
+
+AG found:  A16G
+
+Line number 142
+Sequence number 36
+
+AC found:  A2C
+
+CG found:  C1G
+
+Line number 146
+Sequence number 36
+
+Line number 150
+Sequence number 38
+
+CT found:  C27T
+
+CT found:  C27T
+
+Line number 154
+Sequence number 38
+
+Line number 158
+Sequence number 40
+
+Line number 162
+Sequence number 40
+
+AG found:  A1G
+
+Line number 166
+Sequence number 42
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A1G
+
+CT found:  C74T
+
+CT found:  C1T
+
+CT found:  C74T
+
+CT found:  C74T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C73T
+
+GT found:  G74T
+
+GT found:  G1T
+
+GT found:  G74T
+
+Line number 170
+Sequence number 42
+
+AC found:  A123C
+
+AC found:  A124C
+
+AG found:  A124G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A104G
+
+AG found:  A1G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A124T
+
+AT found:  A1T
+
+AT found:  A123C1T
+
+AT found:  A124T
+
+CG found:  C124G
+
+CG found:  C124G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C124T
+
+CT found:  C1T
+
+CT found:  C124T
+
+CT found:  C124T
+
+Line number 174
+Sequence number 44
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A136G
+
+AG found:  A1G
+
+AT found:  A136T
+
+CT found:  C136T
+
+CT found:  C136T
+
+CT found:  C1T
+
+GT found:  G136T
+
+GT found:  G1T
+
+Line number 178
+Sequence number 44
+
+AC found:  A1C
+
+AC found:  A42C
+
+AC found:  A42C
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AC found:  A42C
+
+AG found:  A42G
+
+AG found:  A1G
+
+AT found:  A42T
+
+AT found:  A42T
+
+AT found:  A42T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C42G
+
+CG found:  C1G
+
+CT found:  C42T
+
+CT found:  C42T
+
+CT found:  C1T
+
+CT found:  C41T
+
+CT found:  C42T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G42T
+
+GT found:  G1T
+
+Line number 182
+Sequence number 46
+
+AC found:  A1C
+
+AC found:  A56C
+
+AC found:  A56C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A56G
+
+AT found:  A56T
+
+CG found:  C1G
+
+CG found:  C56G
+
+CG found:  C56G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C56T
+
+CT found:  C56T
+
+GT found:  G56T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G56T
+
+Line number 186
+Sequence number 46
+
+AG found:  A1G
+
+AT found:  A1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G83T
+
+GT found:  G82T
+
+Line number 190
+Sequence number 48
+
+AC found:  A1C
+
+AG found:  A1G
+
+GT found:  G51T
+
+Line number 194
+Sequence number 48
+
+AC found:  A1C
+
+AC found:  A99C
+
+AC found:  A99C
+
+AG found:  A99G
+
+AG found:  A99G
+
+AG found:  A99G
+
+AG found:  A1G
+
+AG found:  A99G
+
+AT found:  A99T
+
+AT found:  A99T
+
+AT found:  A1T
+
+AT found:  A99T
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A99T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C99G
+
+CG found:  C1G
+
+CT found:  C99T
+
+CT found:  C99T
+
+GT found:  G99T
+
+GT found:  G1T
+
+GT found:  G97T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 198
+Sequence number 50
+
+AC found:  A31C
+
+Line number 202
+Sequence number 50
+
+AC found:  A26C
+
+Line number 206
+Sequence number 52
+
+AC found:  A90C
+
+AC found:  A1C
+
+AC found:  A90C
+
+AC found:  A89C
+
+AC found:  A90C
+
+AC found:  A1C
+
+AG found:  A90G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A90G
+
+AG found:  A90G
+
+AG found:  A90G
+
+AT found:  A90T
+
+AT found:  A89C1T
+
+AT found:  A1T
+
+AT found:  A90T
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G1T
+
+GT found:  G90T
+
+GT found:  G1T
+
+GT found:  G90T
+
+GT found:  G1T
+
+GT found:  G90T
+
+GT found:  G1T
+
+GT found:  G90T
+
+GT found:  G1T
+
+GT found:  G90T
+
+Line number 210
+Sequence number 52
+
+AC found:  A1C
+
+CT found:  C1T
+
+CT found:  C1T
+
+Line number 214
+Sequence number 54
+
+AG found:  A62G
+
+Line number 218
+Sequence number 54
+
+AC found:  A76C
+
+AC found:  A76C
+
+AC found:  A76C
+
+AC found:  A1C
+
+AG found:  A76G
+
+AG found:  A75G
+
+AG found:  A76G
+
+AG found:  A76G
+
+AT found:  A1T
+
+AT found:  A76T
+
+AT found:  A76T
+
+AT found:  A75G1T
+
+AT found:  A76T
+
+AT found:  A76T
+
+CT found:  C1T
+
+CT found:  C76T
+
+GT found:  G76T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 222
+Sequence number 56
+
+CT found:  C1T
+
+GT found:  G61T
+
+Line number 226
+Sequence number 56
+
+Line number 230
+Sequence number 58
+
+AC found:  A80C
+
+AG found:  A80G
+
+AG found:  A1G
+
+AG found:  A80G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A80T
+
+AT found:  A80T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G80T
+
+GT found:  G80T
+
+GT found:  G80T
+
+GT found:  G80T
+
+GT found:  G80T
+
+Line number 234
+Sequence number 58
+
+AG found:  A76G
+
+AG found:  A1G
+
+AT found:  A76T
+
+CT found:  C76T
+
+Line number 238
+Sequence number 60
+
+AC found:  A1C
+
+AG found:  A60G
+
+AG found:  A60G
+
+GT found:  G1T
+
+Line number 242
+Sequence number 60
+
+AC found:  A91C
+
+AC found:  A91C
+
+AC found:  A1C
+
+AC found:  A91C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A90C
+
+AC found:  A1C
+
+AC found:  A91C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1C88G
+
+AG found:  A1G
+
+AG found:  A90C1G
+
+AG found:  A1C90G
+
+AG found:  A1C90G
+
+AG found:  A90G
+
+AT found:  A91T
+
+AT found:  A91T
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A1C1T
+
+AT found:  A1C89T
+
+AT found:  A1T
+
+AT found:  A1C88G1T
+
+AT found:  A91T
+
+AT found:  A91T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C88G
+
+CG found:  C1G
+
+CG found:  C2G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C90G
+
+CG found:  C90G
+
+CT found:  C1T
+
+CT found:  C91T
+
+CT found:  C91T
+
+CT found:  C91T
+
+CT found:  C1T
+
+CT found:  C1G90T
+
+CT found:  C91T
+
+CT found:  C1T
+
+CT found:  C1G1T
+
+CT found:  C89T
+
+CT found:  C1G1T
+
+CT found:  C91T
+
+CT found:  C91T
+
+CT found:  C88G1T
+
+CT found:  C91T
+
+CT found:  C1T
+
+CT found:  C91T
+
+CT found:  C1T
+
+GT found:  G91T
+
+GT found:  G90T
+
+GT found:  G90T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G91T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 246
+Sequence number 62
+
+AG found:  A1G
+
+AG found:  A45G
+
+CG found:  C45G
+
+CT found:  C45T
+
+Line number 250
+Sequence number 62
+
+AC found:  A1C
+
+Line number 254
+Sequence number 64
+
+CT found:  C54T
+
+Line number 258
+Sequence number 64
+
+AC found:  A2C
+
+AG found:  A77G
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C77T
+
+Line number 262
+Sequence number 66
+
+Line number 266
+Sequence number 66
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A58C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A58C
+
+AC found:  A1C
+
+AC found:  A59C
+
+AC found:  A1C
+
+AC found:  A59C
+
+AC found:  A58C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A58C
+
+AC found:  A1C
+
+AC found:  A59C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A59C
+
+AC found:  A58C
+
+AC found:  A58C
+
+AG found:  A1G
+
+AG found:  A59G
+
+AG found:  A59G
+
+AG found:  A59G
+
+AG found:  A57G
+
+AG found:  A59G
+
+AG found:  A1G
+
+AG found:  A59G
+
+AG found:  A59G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1C56G
+
+AG found:  A2G
+
+AG found:  A1G
+
+AG found:  A59G
+
+AG found:  A59G
+
+AG found:  A59G
+
+AG found:  A1G
+
+AG found:  A3G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A2G
+
+AG found:  A1G
+
+AT found:  A59T
+
+AT found:  A57G2T
+
+AT found:  A1G58T
+
+AT found:  A1T
+
+AT found:  A1G57T
+
+AT found:  A1G57T
+
+AT found:  A58C1T
+
+AT found:  A58T
+
+AT found:  A1C56G1T
+
+AT found:  A58C1T
+
+AT found:  A1C57T
+
+AT found:  A58C1T
+
+AT found:  A1C58T
+
+AT found:  A2T
+
+AT found:  A1T
+
+AT found:  A1C58T
+
+AT found:  A59T
+
+AT found:  A1C58T
+
+AT found:  A59T
+
+AT found:  A58T
+
+AT found:  A59T
+
+AT found:  A59T
+
+AT found:  A59T
+
+AT found:  A59T
+
+CG found:  C58G
+
+CG found:  C56G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C58G
+
+CG found:  C59G
+
+CG found:  C58G
+
+CG found:  C1G
+
+CG found:  C58G
+
+CG found:  C58G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C59T
+
+CT found:  C1T
+
+CT found:  C59T
+
+CT found:  C59T
+
+CT found:  C58G1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C56G1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C57T
+
+CT found:  C1G58T
+
+CT found:  C1G58T
+
+CT found:  C59T
+
+CT found:  C58G1T
+
+CT found:  C57T
+
+CT found:  C1T
+
+CT found:  C58G1T
+
+CT found:  C58T
+
+CT found:  C1G58T
+
+CT found:  C59T
+
+CT found:  C59T
+
+CT found:  C58G1T
+
+CT found:  C59T
+
+CT found:  C1T
+
+CT found:  C59T
+
+CT found:  C58G1T
+
+CT found:  C59T
+
+CT found:  C59T
+
+CT found:  C58T
+
+CT found:  C58T
+
+CT found:  C59T
+
+CT found:  C1G1T
+
+GT found:  G1T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G2T
+
+GT found:  G58T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G1T
+
+GT found:  G57T
+
+GT found:  G57T
+
+GT found:  G59T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G58T
+
+GT found:  G58T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G1T
+
+GT found:  G59T
+
+GT found:  G58T
+
+GT found:  G59T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G1T
+
+GT found:  G2T
+
+GT found:  G58T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G59T
+
+GT found:  G1T
+
+Line number 270
+Sequence number 68
+
+AC found:  A94C
+
+AG found:  A94G
+
+AT found:  A94T
+
+CT found:  C94T
+
+GT found:  G1T
+
+GT found:  G94T
+
+GT found:  G94T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G94T
+
+Line number 274
+Sequence number 68
+
+AC found:  A1C
+
+AG found:  A102G
+
+AT found:  A1C100T
+
+AT found:  A102T
+
+AT found:  A102T
+
+CT found:  C1T
+
+CT found:  C100T
+
+CT found:  C102T
+
+CT found:  C102T
+
+Line number 278
+Sequence number 70
+
+AG found:  A1G
+
+Line number 282
+Sequence number 70
+
+Line number 286
+Sequence number 72
+
+AC found:  A1C
+
+AG found:  A1G
+
+AT found:  A1T
+
+Line number 290
+Sequence number 72
+
+AC found:  A1C
+
+AT found:  A61T
+
+CT found:  C1T
+
+Line number 294
+Sequence number 74
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A68G
+
+AG found:  A1G
+
+AG found:  A68G
+
+AG found:  A1G
+
+AG found:  A1G
+
+CG found:  C1G
+
+CT found:  C68T
+
+CT found:  C68T
+
+GT found:  G68T
+
+GT found:  G1T
+
+Line number 298
+Sequence number 74
+
+Line number 302
+Sequence number 76
+
+AT found:  A81T
+
+CG found:  C81G
+
+CT found:  C1T
+
+Line number 306
+Sequence number 76
+
+AC found:  A1C
+
+AC found:  A135C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A135G
+
+AG found:  A2G
+
+AG found:  A135G
+
+AG found:  A1G
+
+AG found:  A135G
+
+CT found:  C135T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G1T
+
+Line number 310
+Sequence number 78
+
+AC found:  A1C
+
+AT found:  A59T
+
+CT found:  C59T
+
+CT found:  C1T
+
+GT found:  G59T
+
+Line number 314
+Sequence number 78
+
+AG found:  A1G
+
+Line number 318
+Sequence number 80
+
+AG found:  A1G
+
+CT found:  C54T
+
+GT found:  G54T
+
+GT found:  G54T
+
+Line number 322
+Sequence number 80
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A83C
+
+AG found:  A83G
+
+AG found:  A83G
+
+AG found:  A1G
+
+AG found:  A83G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1C1G
+
+AG found:  A2G
+
+AG found:  A1G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A83T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C83G
+
+CT found:  C1T
+
+CT found:  C83T
+
+CT found:  C1T
+
+CT found:  C83T
+
+GT found:  G83T
+
+GT found:  G1T
+
+GT found:  G83T
+
+GT found:  G1T
+
+GT found:  G83T
+
+GT found:  G1T
+
+Line number 326
+Sequence number 82
+
+AG found:  A47G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A47T
+
+CT found:  C1T
+
+Line number 330
+Sequence number 82
+
+AC found:  A1C
+
+AG found:  A109G
+
+AT found:  A1T
+
+CT found:  C1T
+
+Line number 334
+Sequence number 84
+
+AC found:  A86C
+
+Line number 338
+Sequence number 84
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A77G
+
+AG found:  A1G
+
+AT found:  A77T
+
+AT found:  A1T
+
+CG found:  C77G
+
+GT found:  G77T
+
+GT found:  G77T
+
+Line number 342
+Sequence number 86
+
+AC found:  A1C
+
+AG found:  A1G
+
+AT found:  A39T
+
+CT found:  C39T
+
+GT found:  G1T
+
+Line number 346
+Sequence number 86
+
+Line number 350
+Sequence number 88
+
+Line number 354
+Sequence number 88
+
+AC found:  A1C
+
+AC found:  A124C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A124C
+
+AG found:  A4G
+
+CG found:  C124G
+
+CT found:  C1T
+
+GT found:  G1T
+
+GT found:  G124T
+
+Line number 358
+Sequence number 90
+
+Line number 362
+Sequence number 90
+
+AG found:  A1G
+
+AG found:  A93G
+
+AG found:  A93G
+
+AT found:  A93T
+
+CT found:  C93T
+
+GT found:  G1T
+
+Line number 366
+Sequence number 92
+
+AC found:  A136C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A3C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A135C
+
+AG found:  A136G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A136G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A135G
+
+AG found:  A136G
+
+AG found:  A136G
+
+AG found:  A1G
+
+AG found:  A135C1G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A136T
+
+AT found:  A135G1T
+
+AT found:  A1C1T
+
+AT found:  A136T
+
+AT found:  A1T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C136G
+
+CG found:  C1G
+
+CT found:  C136T
+
+CT found:  C136T
+
+CT found:  C1T
+
+CT found:  C2T
+
+CT found:  C136T
+
+CT found:  C136T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C136T
+
+CT found:  C1T
+
+CT found:  C136T
+
+GT found:  G1T
+
+GT found:  G136T
+
+GT found:  G136T
+
+GT found:  G1T
+
+GT found:  G136T
+
+GT found:  G2T
+
+GT found:  G136T
+
+GT found:  G136T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G2T
+
+GT found:  G136T
+
+GT found:  G136T
+
+GT found:  G136T
+
+GT found:  G136T
+
+Line number 370
+Sequence number 92
+
+AC found:  A138C
+
+AC found:  A138C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AT found:  A138T
+
+AT found:  A138T
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G138T
+
+GT found:  G136T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 374
+Sequence number 94
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A85C
+
+AC found:  A14C
+
+AC found:  A85C
+
+AC found:  A1C
+
+AC found:  A83C
+
+AC found:  A1C
+
+AC found:  A85C
+
+AC found:  A82C
+
+AC found:  A1C
+
+AC found:  A83C
+
+AC found:  A84C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AC found:  A84C
+
+AC found:  A84C
+
+AC found:  A84C
+
+AG found:  A1C1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1C82G
+
+AG found:  A85G
+
+AG found:  A83C1G
+
+AG found:  A1G
+
+AG found:  A85G
+
+AG found:  A1C1G
+
+AG found:  A82C2G
+
+AG found:  A1C2G
+
+AG found:  A1G
+
+AG found:  A84G
+
+AG found:  A84G
+
+AG found:  A85G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A84G
+
+AG found:  A2G
+
+AG found:  A85G
+
+AG found:  A1G
+
+AT found:  A85T
+
+AT found:  A1T
+
+AT found:  A85T
+
+AT found:  A1T
+
+AT found:  A85T
+
+AT found:  A1G83T
+
+AT found:  A1C82G2T
+
+AT found:  A85T
+
+AT found:  A1T
+
+AT found:  A83C1G1T
+
+AT found:  A1G83T
+
+AT found:  A1T
+
+AT found:  A82C2G1T
+
+AT found:  A1G83T
+
+AT found:  A83C1T
+
+AT found:  A83T
+
+AT found:  A85T
+
+AT found:  A84T
+
+AT found:  A1C1T
+
+AT found:  A1G2T
+
+AT found:  A85T
+
+AT found:  A1G82T
+
+AT found:  A84G1T
+
+AT found:  A85T
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A84C1T
+
+AT found:  A84C1T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C82G
+
+CG found:  C2G
+
+CG found:  C1G
+
+CG found:  C85G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C2G
+
+CG found:  C2G
+
+CG found:  C85G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C85G
+
+CG found:  C85G
+
+CG found:  C85G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C85G
+
+CG found:  C84G
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C85T
+
+CT found:  C85T
+
+CT found:  C82G2T
+
+CT found:  C1T
+
+CT found:  C2G1T
+
+CT found:  C2T
+
+CT found:  C1G1T
+
+CT found:  C1G84T
+
+CT found:  C2G1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C85T
+
+CT found:  C1G84T
+
+CT found:  C1G1T
+
+CT found:  C85T
+
+CT found:  C2T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C85T
+
+CT found:  C1T
+
+CT found:  C1G83T
+
+CT found:  C84G1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C84T
+
+GT found:  G1T
+
+GT found:  G85T
+
+GT found:  G83T
+
+GT found:  G2T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G83T
+
+GT found:  G84T
+
+GT found:  G1T
+
+GT found:  G83T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G84T
+
+GT found:  G85T
+
+GT found:  G2T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G85T
+
+GT found:  G1T
+
+GT found:  G82T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G1T
+
+GT found:  G85T
+
+GT found:  G83T
+
+GT found:  G1T
+
+GT found:  G1T
+
+Line number 378
+Sequence number 94
+
+AC found:  A1C
+
+AC found:  A4C
+
+AC found:  A1C
+
+AC found:  A212C
+
+AC found:  A1C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A210G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A1G
+
+AG found:  A212G
+
+AT found:  A1T
+
+AT found:  A1T
+
+AT found:  A1T
+
+CT found:  C1T
+
+CT found:  C212T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+CT found:  C1T
+
+GT found:  G212T
+
+GT found:  G212T
+
+GT found:  G212T
+
+GT found:  G212T
+
+Line number 382
+Sequence number 96
+
+AC found:  A109C
+
+AT found:  A1T
+
+CG found:  C1G
+
+CT found:  C1T
+
+CT found:  C109T
+
+Line number 386
+Sequence number 96
+
+AC found:  A53C
+
+AG found:  A53G
+
+AG found:  A1G
+
+CT found:  C53T
+
+CT found:  C1T
+
+CT found:  C53T
+
+GT found:  G53T
+
+GT found:  G1T
+
+Line number 390
+Sequence number 98
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AG found:  A81G
+
+AT found:  A1T
+
+CG found:  C1G
+
+CT found:  C81T
+
+GT found:  G1T
+
+Line number 394
+Sequence number 98
+
+AC found:  A1C
+
+AC found:  A2C
+
+AC found:  A1C
+
+AG found:  A1G
+
+AG found:  A98G
+
+AT found:  A98T
+
+CT found:  C98T
+
+CT found:  C98T
+
+CT found:  C98T
+
+CT found:  C98T
+
+CT found:  C98T
+
+Line number 398
+Sequence number 100
+
+AG found:  A50G
+
+AT found:  A50T
+
+AT found:  A50T
+
+AT found:  A1T
+
+CG found:  C1G
+
+CG found:  C1G
+
+CG found:  C1G
+
+CT found:  C1T
+
+GT found:  G1T
+
+GT found:  G50T
+
+GT found:  G1T
+
+GT found:  G50T
+
+GT found:  G50T
+
+The number of A and C: 226
+
+The number of A and G: 283
+
+The number of A and T: 251
+
+The number of C and G: 174
+
+The number of C and T: 303
+
+The number of G and T: 308
