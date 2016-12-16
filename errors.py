@@ -56,6 +56,7 @@ with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f: #why i
 
 #using reg exp to find broken seq
 #FIGURE OUT
+#DOESNT ALLOW FOR 4 LETTERS
 import sys
 sys.stdout=open('output.txt', 'w')#w means write, output will print to file instead of console, global 
 import re
@@ -110,57 +111,63 @@ for c in counter: #JUST NEED THIS IN THE END, NOT OTHER PRINTS
 #need to go to sequence line and find positions
 letters=['A','C','T','G'] #creates a list
 with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:
+	filestr=str(f)
 	seqs=[] #initialise the list	
-	for i, line in enumerate(f, 1): #have to store sequence line before it goes past it, as list?
+	for i, line in enumerate(f, 1): #contents is file as a string
+	#TRYING TO RID INDEX OUT OF RANGE ERROR, try to get it to stop enumerating at end of file/last sequence
 		if i % 4 == 2:
-			seq=line
-			nextline=true #how specify, add 1 to i?? or other fergo way?
-			continue
-			if nextline:
-			
-
-			#inside here go to next line with changes 
-				diffs=line.split() #makes a list from changes line
+			seq=line #store the seq
+			print (seq)
+			nextline= True #nextline, how specify, add 1 to i?
+			#continue #ignore logic in loop?
+			if nextline: #inside the loop
+				diffsline = gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt').readlines()[i] #reads file starting at 0
+				print (diffsline)
+				diffs=diffsline.split() #makes a list from changes line, separated by spaces 
+				#do i want to store all the diff lines? 
 				print (diffs)
-			#extract pos no.
-					for d in diffs: #and s in seqs to get them to align?
-						pos=re.search(r'\d+',d) #will get a list of the diffs position numbers? search should get me first number found in each element, + sign means you have to find at least one
-						print (pos.group()) #gets you the number at the end of pos string, pos.goup() is still string
-						posno=int(pos.group())-1 #convert integer, manage offset
-						print(seq[posno])
-						cons='seq[posno]' #that is cons #in the brackets is the indice of string
-							for l in letters: #l is letter!
-								if l != cons: #right indent?                         
-									if l in diffs:
-										counter['cons'+'l']+=1 #right notation?
-				nextline=false
-
-			seqs.append(line) #adds line to list
-	print (seqs) #as a list
-
-break
-with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:	
-	for i, line in enumerate(f, 0):
-		if i % 4 == 2: #lines with changes
-			diffs=line.split() #makes a list from changes line
-			print (diffs)
+			nextline= False
 			#extract pos no.
 			for d in diffs: #and s in seqs to get them to align?
-				pos=re.search(r'\d+',d) #will get a list of the diffs position numbers? search should get me first number found in each element, + sign means you have to find at least one
-				print (pos.group()) #gets you the number at the end of pos string, pos.goup() is still string
-				posno=int(pos.group())-1 #convert integer, manage offset
+				###### got to allow for no diffs
+				pos=re.search(r'\d+',d) #search should get me first number found in each element, + sign means you have to find at least one
+				if pos: #if you get something
+					print (pos)
+				#print (pos.group()) #gets you the number at the end of pos string, pos.goup() is still string
+					posno=int(pos.group())-1 #convert integer, manage offset
+					print ('index: ', posno)
+					print('consensus: ', seq[posno])
+					cons=seq[posno] #that is cons #in the brackets is the indice of string
+					for l in letters: #l is letter!
+						if l != cons: #right indent?                         
+							if l in diffs:
+								counter[cons+l]+=1 #right notation?
+
+			seqs.append(line) #adds seq line to list
+	#########print (seqs) #as a list
+
+#with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:	
+	#for i, line in enumerate(f, 0):
+		#if i % 4 == 2: #lines with changes
+			#diffs=line.split() #makes a list from changes line
+			#print (diffs)
+			#extract pos no.
+			#for d in diffs: #and s in seqs to get them to align?
+				#pos=re.search(r'\d+',d) #will get a list of the diffs position numbers? search should get me first number found in each element, + sign means you have to find at least one
+				#print (pos.group()) #gets you the number at the end of pos string, pos.goup() is still string
+				#posno=int(pos.group())-1 #convert integer, manage offset
 				#for i, line in enumerate(f, 1): #getting seq line, extract cons letter outside this?
 					#if i % 4 == 2: #went to name line from changes line
 						#for i, char in enumerate(line,1): #changes line needs to start at pos 1
 						#if pos=i: #index for each position in line 
 						#return char=cons 
 				###########UP TO how know going to right seq???####### FRI
-				print(seq[posno])
-				cons='seq[posno]' #that is cons #in the brackets is the indice of string
-				for l in letters: #l is letter!
-					if l != cons: #right indent?                         
-						if l in diffs:
-							counter['cons'+'l']+=1 #right notation?
+				#print(seq[posno])
+				#cons='seq[posno]' #that is cons #in the brackets is the indice of string
+				#for l in letters: #l is letter!
+					#if l != cons: #right indent?                         
+						#if l in diffs:
+							#counter['cons'+'l']+=1 #right notation?
 	for c in counter:
 		print ("\nTotal %s:%d" % (c, counter[c])) #new total counts of error types, inclusive of multiple letter changes in one spot
 
@@ -180,7 +187,6 @@ with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:
 	#what format for results? table? GET RID OF THIS WAY LATER
 
 #NEXT
-#allow for 4 letter changes
 #fix sequence number, format output
 #flanking
 
