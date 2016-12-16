@@ -6003,26 +6003,36 @@ Error location in consensus sequence:  284
 
 Consensus character at error location:  G
 
-Total AC errors:134
-
-Total CA errors:88
-
-Total TC errors:161
-
-Total CT errors:139
-
-Total AT errors:90
+Total CG errors:77
 
 Total TG errors:195
 
-Total GT errors:125
+Total CA errors:88
+
+Total AC errors:134
+
+Total GC errors:72
 
 Total TA errors:125
 
+Total AT errors:90
+
 Total GA errors:124
 
+Total CT errors:139
+
+Total TC errors:161
+
+Total GT errors:125
+
 Total AG errors:150
-
-Total CG errors:77
-
-Total GC errors:72
+A
+G
+[77, 195, 88, 134, 72, 125, 90, 124, 139, 161, 125, 150]
+77
+[77, 195, 88, 134, 72, 125, 90, 124, 139, 161, 125, 150]
+['[77', ' 195', ' 88', ' 134', ' 72', ' 125', ' 90', ' 124', ' 139', ' 161', ' 125', ' 150]']
+[77
+C G [
+T G 7
+C A 7

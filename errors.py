@@ -11,6 +11,7 @@ with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:
 import re #using reg exp to find broken seq
 letters=['A','C','T','G'] #creates a list
 counter={'AC':0, 'CA':0,'AG':0, 'GA':0,'AT':0, 'TA':0,'CT':0, 'TC':0, 'CG':0, 'GC':0,'GT':0, 'TG':0} #creates a dictionary? of counters
+table=[[],[],[]] #list of 3 lists/columns
 with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:
 	filestr=str(f)
 	seqs=[] #initialise the list	
@@ -44,18 +45,56 @@ with gzip.open(r'data\Jurkat_only_S5.consensus.100.fastq.gz', 'rt') as f:
 								counter[l+cons]+=1 
 			seqs.append(line) #adds seq line to list
 			#print (seqs) #as a list
-	for c in counter:
+	for c in counter: #each counter is a line in the table
 		print ("\nTotal %s errors:%d" % (c, counter[c])) #new total counts of error types, inclusive of multiple letter changes in one spot
+		#list of lists(matrix) method
+		splitc = re.findall('.', c)
+		table[0].append(splitc[0]) #l is first component of c
+		table[1].append(splitc[1]) #l and cons always G.. split c instead of retrieving after loop
+		table[2].append(counter[c]) #list of ints?
+	print(splitc[0])
+	print(splitc[1])#need to be same format
+	print(table[2])#don't need later
+	table2=table[2]
+	print (table2[0])
+	#zip and joinrow method
+	strtable2=str(table[2])
+	print(strtable2)
+	splittable2=strtable2.split(',')
+	print(splittable2) #trying to get a list separated by square brackets, can't split
+	print(splittable2[0])
+	#ftable2=list(table2) 
+	for row in zip(table[0],table[1],splittable2[0]): #wants a str input #3rd element requires iteration? do these arguments have a 1 char limit???
+		print(' '.join(row)) #didn't print all, no borders
+
+	#texttable method
+	#from texttable import Texttable
+	#t=Texttable()
+	#t.addrows(['diff, 'cons', 'c', 'count'],[table])
+	#print t.draw()
+	#pink line & syntax error at cons
+
+	#terminaltables method
+
+	#asciitable method
+
+	#tabulate method
+	#from tabulate import tabulate
+	#print tabulate ([table],[headers='diff','cons','c','count'],tablefmt='orgtb1')
+	#got invalid syntax error after print tabulate 
+
+	#one method
+	#for line in table: #want to print the accumulation of errors after
+		#print (' '.joinline())
+			#print('\t'.joinline()) #\t is a tab 
+			#error - has no joinline attribute
+
+#zip method
 #for row in zip(l + cons, counter[c]):
 	#print (row)
 			#error - zip arg #2 mjust support iteration
-			#try another method
-
-
-#print as table, what order?
-#print(counter[c])
 
 
 #NEXT
-#fix sequence number, format output to table , rid rest?
+#fix sequence number, fix table/last col format , rid rest?
 #flanking
