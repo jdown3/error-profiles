@@ -32,61 +32,61 @@ cftable[2].append('Con')
 cftable[3].append('Pst')
 cftable[4].append('No.')
 
+
+if args.Should_output_include_flanking_for_each_error == 'yes': #if requested want a flanking table
+	with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as ft:
+		ft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')
+
 import re #using reg exp to find broken seq
 import gzip
-with gzip.open(filename, 'rt') as f:
-	if args.Should_output_include_flanking_for_each_error == 'yes': #if requested want a flanking table
-		with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as ft:
-			ft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')	
-		for i, line in enumerate(f, 1):
-			if i % 4 == 2:
-				seq=line.rstrip() #store the seq, gets rid of white space/line afterwards, \n is last char
-				seqno=round((i/4)+0.1) #because 0.5 gets rounded down
-				print(seqno)
-				errorno=0
-				diffno=0
-			if i % 4 == 3:	
-				diffs=line.split() #makes a list from changes line, separated by spaces 
-				for d in diffs: #after you get one diffsline, carry on
-					diffno+=1
-					#print('diff',d)
-					pos=re.search(r'\d+',d) #search should get me first number found in each element, + sign means you have to find at least one
-					if pos: #if you get something, to allow for no diffs
-						posno=int(pos.group())-1 #convert integer, manage offset
-						#print('posno',posno)
-						cons=seq[posno] #that is cons #in the brackets is the indice of string
-						for l in letters: #l is letter!
-							if l != cons:                         
-								if l in d: #look for l in a single diff
-									counter[l+cons]+=1 
-									errorno+=1 #counts diffs for each diffsline 
-									#go back and get chars, shorter way? slices
-									if posno==0: # == checks if two things have the same value
-										prev='  '
-										post=seq[posno+1:(posno+1+flankno)] #slicing is inclusive of bounds, if flankno 2, like saying 1:2
-									elif posno+1<=flankno: 
-										prev=' '+seq[:posno]
-										post=seq[posno+1:(posno+1+flankno)]
-									elif len(seq)-1==posno: #-1 to manage offset, make same as posno, start at 0
-										post='  ' #2 spaces 
-										prev=seq[posno-flankno:posno]	
-									elif posno+1>(len(seq)-flankno): #+1 to make it same as flankno, starting at 1
-										post=seq[posno+1:]+' '
-										prev=seq[posno-flankno:posno]
-									else:
-										prev=seq[posno-flankno:posno]
-										post=seq[posno+1:(posno+1+flankno)]
-									if args.Should_output_include_flanking_for_each_error == 'yes': #if you want a flanking table
-										ft.write('\n') #write each current var. then forget
-										ft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
-									#increment counter for that error seq
-									cfcounter[prev+l+cons+post]+=1
-									cfcounter[prev+l+cons+'  ']+=1
-									cfcounter['  '+l+cons+post]+=1
-									cfcounter[prev+' '+' '+post]+=1
-									cfcounter[prev+' '+' '+'  ']+=1
-									cfcounter['  '+' '+' '+post]+=1
-									#print(cfcounter)
+with gzip.open(filename, 'rt') as f:	
+	for i, line in enumerate(f, 1):
+		if i % 4 == 2:
+			seq=line.rstrip() #store the seq, gets rid of white space/line afterwards, \n is last char
+			seqno=round((i/4)+0.1) #because 0.5 gets rounded down
+			print(seqno)
+			errorno=0
+			diffno=0
+		if i % 4 == 3:	
+			diffs=line.split() #makes a list from changes line, separated by spaces 
+			for d in diffs: #after you get one diffsline, carry on
+				diffno+=1
+				pos=re.search(r'\d+',d) #search should get me first number found in each element, + sign means you have to find at least one
+				if pos: #if you get something, to allow for no diffs
+					posno=int(pos.group())-1 #convert integer, manage offset
+					cons=seq[posno] #that is cons #in the brackets is the indice of string
+					for l in letters: #l is letter!
+						if l != cons:                         
+							if l in d: #look for l in a single diff
+								counter[l+cons]+=1 
+								errorno+=1 #counts diffs for each diffsline 
+								#go back and get chars, shorter way? slices
+								if posno==0: # == checks if two things have the same value
+									prev='  '
+									post=seq[posno+1:(posno+1+flankno)] #slicing is inclusive of bounds, if flankno 2, like saying 1:2
+								elif posno+1<=flankno: 
+									prev=' '+seq[:posno]
+									post=seq[posno+1:(posno+1+flankno)]
+								elif len(seq)-1==posno: #-1 to manage offset, make same as posno, start at 0
+									post='  ' #2 spaces 
+									prev=seq[posno-flankno:posno]	
+								elif posno+1>(len(seq)-flankno): #+1 to make it same as flankno, starting at 1
+									post=seq[posno+1:]+' '
+									prev=seq[posno-flankno:posno]
+								else:
+									prev=seq[posno-flankno:posno]
+									post=seq[posno+1:(posno+1+flankno)]
+								if args.Should_output_include_flanking_for_each_error == 'yes': #if you want a flanking table
+									ft.write('\n') #write each current var. then forget
+									ft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
+								#increment counter for that error seq
+								cfcounter[prev+l+cons+post]+=1
+								cfcounter[prev+l+cons+'  ']+=1
+								cfcounter['  '+l+cons+post]+=1
+								cfcounter[prev+' '+' '+post]+=1
+								cfcounter[prev+' '+' '+'  ']+=1
+								cfcounter['  '+' '+' '+post]+=1
+								#print(cfcounter)
 
 with open(args.Output_files_directory_and_name + '.error counts table' + '.txt', 'w') as ct: #w means write, output will print to file instead of console, global 
 	for c in counter: #each counter is a line in the table
