@@ -1,6 +1,14 @@
 import sys
 
-filename=r'data\Jurkat_only_S5.consensus.fastq.gz' #what do about r, people won't input
+import argparse #for commandline interface, put in python, then directory to script
+parser=argparse.ArgumentParser() #create an argument parser, need descript in brackets?\
+parser.add_argument('File_directory', type=str, help='what is the directory for the input file of sequences? Must be a .gz file. Place in quotes.')
+parser.add_argument('Flanking_number', type=int, help='how many nucleotides before and after the error position do you want to record?')
+parser.add_argument('Output_files_directory_and_name', type=str, help='where do you want the output files to be stored and their name begin with? Place in quotes')
+parser.add_argument('Should_output_include_flanking_for_each_error', type=str, help='Answer yes or no regarding whether you would like an output file of the flanking sequence of every error')
+args=parser.parse_args()
+
+filename=args.File_directory 
 
 #LETTERS CODE to consider multiple letter changes in one error/diff
 letters=['A','C','T','G'] #creates a list
@@ -10,7 +18,7 @@ ctable[0].append('Dif')
 ctable[1].append('Con')
 ctable[2].append('No.')
 
-flankno=2 
+flankno=args.Flanking_number
 
 diffs=[]
 
@@ -27,15 +35,14 @@ cftable[4].append('No.')
 import re #using reg exp to find broken seq
 import gzip
 with gzip.open(filename, 'rt') as f:
-	with open('flank table.txt', 'w') as ft:
-		ft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')	
+	if args.Should_output_include_flanking_for_each_error == 'yes': #if requested want a flanking table
+		with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as ft:
+			ft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')	
 		for i, line in enumerate(f, 1):
 			if i % 4 == 2:
 				seq=line.rstrip() #store the seq, gets rid of white space/line afterwards, \n is last char
 				seqno=round((i/4)+0.1) #because 0.5 gets rounded down
 				print(seqno)
-				#print('seq',seq)
-				#print('len',len(seq))
 				errorno=0
 				diffno=0
 			if i % 4 == 3:	
@@ -69,8 +76,9 @@ with gzip.open(filename, 'rt') as f:
 									else:
 										prev=seq[posno-flankno:posno]
 										post=seq[posno+1:(posno+1+flankno)]
-									ft.write('\n') #write each current var. then forget
-									ft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
+									if args.Should_output_include_flanking_for_each_error == 'yes': #if you want a flanking table
+										ft.write('\n') #write each current var. then forget
+										ft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
 									#increment counter for that error seq
 									cfcounter[prev+l+cons+post]+=1
 									cfcounter[prev+l+cons+'  ']+=1
@@ -80,7 +88,7 @@ with gzip.open(filename, 'rt') as f:
 									cfcounter['  '+' '+' '+post]+=1
 									#print(cfcounter)
 
-with open('Count of error types table.txt', 'w') as ct: #w means write, output will print to file instead of console, global 
+with open(args.Output_files_directory_and_name + '.error counts table' + '.txt', 'w') as ct: #w means write, output will print to file instead of console, global 
 	for c in counter: #each counter is a line in the table
 		#list of lists method
 		splitc = re.findall('.', c) #splits c after a single position
@@ -107,6 +115,5 @@ with open('Count of error types table.txt', 'w') as ct: #w means write, output w
 		ct.write('\t'.join(row)) 
 		ct.write('\n')
 
-#NEXT
-#change error and diff counters
-
+#NEXT: run in cmd line, go over
+#analyse results
