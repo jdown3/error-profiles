@@ -11,12 +11,18 @@ args=parser.parse_args()
 filename=args.File_directory 
 
 #LETTERS CODE to consider multiple letter changes in one error/diff
-letters=['A','C','T','G'] #creates a list
+letters=['A','C','G','T'] #creates a list
 counter={'AC':0, 'CA':0,'AG':0, 'GA':0,'AT':0, 'TA':0,'CT':0, 'TC':0, 'CG':0, 'GC':0,'GT':0, 'TG':0} #creates a dictionary? of counters
 ctable=[[],[],[]] #list of 3 lists/columns
 ctable[0].append('Dif')
 ctable[1].append('Con')
 ctable[2].append('No.')
+
+ntable=[['nt','A','C','G','T'],['No.']]
+acount=0
+ccount=0
+gcount=0
+tcount=0
 
 flankno=args.Flanking_number
 
@@ -34,8 +40,8 @@ cftable[4].append('No.')
 
 
 if args.Should_output_include_flanking_for_each_error == 'yes': #if requested want a flanking table
-	with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as ft:
-		ft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')
+	with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as eft:
+		eft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')
 
 import re #using reg exp to find broken seq
 import gzip
@@ -43,6 +49,10 @@ with gzip.open(filename, 'rt') as f:
 	for i, line in enumerate(f, 1):
 		if i % 4 == 2:
 			seq=line.rstrip() #store the seq, gets rid of white space/line afterwards, \n is last char
+			acount+=(seq.count('A')) #working
+			ccount+=(seq.count('C'))
+			gcount+=(seq.count('G'))
+			tcount+=(seq.count('T'))
 			seqno=round((i/4)+0.1) #because 0.5 gets rounded down
 			print(seqno)
 			errorno=0
@@ -77,8 +87,8 @@ with gzip.open(filename, 'rt') as f:
 									prev=seq[posno-flankno:posno]
 									post=seq[posno+1:(posno+1+flankno)]
 								if args.Should_output_include_flanking_for_each_error == 'yes': #if you want a flanking table
-									ft.write('\n') #write each current var. then forget
-									ft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
+									eft.write('\n') #write each current var. then forget
+									eft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
 								#increment counter for that error seq
 								cfcounter[prev+l+cons+post]+=1
 								cfcounter[prev+l+cons+'  ']+=1
@@ -86,9 +96,17 @@ with gzip.open(filename, 'rt') as f:
 								cfcounter[prev+' '+' '+post]+=1
 								cfcounter[prev+' '+' '+'  ']+=1
 								cfcounter['  '+' '+' '+post]+=1
-								#print(cfcounter)
 
-with open(args.Output_files_directory_and_name + '.error counts table' + '.txt', 'w') as ct: #w means write, output will print to file instead of console, global 
+with open(args.Output_files_directory_and_name + '.nt counts' + '.txt', 'w') as nc: #w means write, output will print to file instead of console, global 
+	ntable[1].append(str(acount)) #not working
+	ntable[1].append(str(ccount))
+	ntable[1].append(str(gcount))
+	ntable[1].append(str(tcount))
+	for row in zip(ntable[0],ntable[1]):
+		nc.write('\t'.join(row))
+		nc.write('\n')
+
+with open(args.Output_files_directory_and_name + '.error counts' + '.txt', 'w') as ec:
 	for c in counter: #each counter is a line in the table
 		#list of lists method
 		splitc = re.findall('.', c) #splits c after a single position
@@ -98,10 +116,10 @@ with open(args.Output_files_directory_and_name + '.error counts table' + '.txt',
 	ctable[2]=[str(counter[c]) for counter[c] in ctable[2]] #or do this list comp
 	#zip and joinrow method
 	for row in zip(ctable[0],ctable[1],ctable[2]): #wants a str input #3rd element requires iteration? as many rows to match up with the first two arguments
-		ct.write('\t'.join(row)) #tab separated 
-		ct.write('\n')
+		ec.write('\t'.join(row)) #tab separated 
+		ec.write('\n')
 
-	ct.write('\n')
+with open(args.Output_files_directory_and_name + '.flanking counts' + '.txt', 'w') as fc:
 	#count flanks table
 	scfcounter=OrderedDict(reversed(sorted(cfcounter.items(), key=lambda t: t[1]))) #don't get, descending value
 	for k in scfcounter: 
@@ -112,8 +130,10 @@ with open(args.Output_files_directory_and_name + '.error counts table' + '.txt',
 		cftable[3].append(splitk[4]+splitk[5])
 		cftable[4].append(str(scfcounter[k]))
 	for row in zip(cftable[0],cftable[1],cftable[2],cftable[3],cftable[4]):
-		ct.write('\t'.join(row)) 
-		ct.write('\n')
+		fc.write('\t'.join(row)) 
+		fc.write('\n')
+
+with open(args.Output_files_directory_and_name + '.sequences of flanks length counts' + '.txt', 'w') as flc:
 
 #NEXT: run in cmd line, go over
 #analyse results
