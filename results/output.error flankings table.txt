@@ -1,2 +1,0 @@
-Se#	Di#	Er#	Pre	Dif	Con	Post
-100	13	13	GC	C	G	TC
