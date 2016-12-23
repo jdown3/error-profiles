@@ -12,12 +12,11 @@ filename=args.File_directory
 
 #LETTERS CODE to consider multiple letter changes in one error/diff
 letters=['A','C','G','T'] #creates a list
+#table to count each type of error, single letter change
 counter={'AC':0, 'CA':0,'AG':0, 'GA':0,'AT':0, 'TA':0,'CT':0, 'TC':0, 'CG':0, 'GC':0,'GT':0, 'TG':0} #creates a dictionary? of counters
-ctable=[[],[],[]] #list of 3 lists/columns
-ctable[0].append('Dif')
-ctable[1].append('Con')
-ctable[2].append('No.')
+ctable=[['Dif'],['Con'],['No.']] #list of 3 lists/columns
 
+#table to count the number of each nucleotide in the sequences
 ntable=[['nt','A','C','G','T'],['No.']]
 acount=0
 ccount=0
@@ -31,17 +30,15 @@ diffs=[]
 from collections import defaultdict
 from collections import OrderedDict
 cfcounter=defaultdict(int)
-cftable=[[],[],[],[],[]]
-cftable[0].append('Pre')
-cftable[1].append('Dif')
-cftable[2].append('Con')
-cftable[3].append('Pst')
-cftable[4].append('No.')
+#table to count each type of error, including the flank seq before and after the error
+cftable=[['Pre'],['Dif'],['Con'],['Pst'],['No.']]
 
+flcounter=defaultdict(int)
+#table to count sequences the same length as what's shown in the flank table
+fltable=[['Seq'],['No.']]
+seqsize=2*flankno+1
 
-if args.Should_output_include_flanking_for_each_error == 'yes': #if requested want a flanking table
-	with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as eft:
-		eft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')
+import pdb
 
 import re #using reg exp to find broken seq
 import gzip
@@ -55,6 +52,12 @@ with gzip.open(filename, 'rt') as f:
 			tcount+=(seq.count('T'))
 			seqno=round((i/4)+0.1) #because 0.5 gets rounded down
 			print(seqno)
+			startpos=0
+			while (len(seq)-startpos)>=seqsize: #as long as their are 5 chars left, length-startpos gets you how many chars left
+				#if len(seq[startpos:seqsize]) < seqsize:
+					#pdb.set_trace()
+				flcounter[seq[startpos:startpos+seqsize]]+=1
+				startpos+=1
 			errorno=0
 			diffno=0
 		if i % 4 == 3:	
@@ -87,8 +90,10 @@ with gzip.open(filename, 'rt') as f:
 									prev=seq[posno-flankno:posno]
 									post=seq[posno+1:(posno+1+flankno)]
 								if args.Should_output_include_flanking_for_each_error == 'yes': #if you want a flanking table
-									eft.write('\n') #write each current var. then forget
-									eft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
+									with open(args.Output_files_directory_and_name + '.error flankings table' + '.txt', 'w') as eft:
+										eft.write('Se#'+'\t'+'Di#'+'\t'+'Er#'+'\t'+'Pre'+'\t'+'Dif'+'\t'+'Con'+'\t'+'Post')
+										eft.write('\n') #write each current var. then forget
+										eft.write(str(seqno)+'\t'+str(diffno)+'\t'+str(errorno)+'\t'+prev+'\t'+l+'\t'+cons+'\t'+post)	
 								#increment counter for that error seq
 								cfcounter[prev+l+cons+post]+=1
 								cfcounter[prev+l+cons+'  ']+=1
@@ -97,7 +102,7 @@ with gzip.open(filename, 'rt') as f:
 								cfcounter[prev+' '+' '+'  ']+=1
 								cfcounter['  '+' '+' '+post]+=1
 
-with open(args.Output_files_directory_and_name + '.nt counts' + '.txt', 'w') as nc: #w means write, output will print to file instead of console, global 
+with open(args.Output_files_directory_and_name + '.nt count' + '.txt', 'w') as nc: #w means write, output will print to file instead of console, global 
 	ntable[1].append(str(acount)) #not working
 	ntable[1].append(str(ccount))
 	ntable[1].append(str(gcount))
@@ -106,7 +111,7 @@ with open(args.Output_files_directory_and_name + '.nt counts' + '.txt', 'w') as 
 		nc.write('\t'.join(row))
 		nc.write('\n')
 
-with open(args.Output_files_directory_and_name + '.error counts' + '.txt', 'w') as ec:
+with open(args.Output_files_directory_and_name + '.error count' + '.txt', 'w') as ec:
 	for c in counter: #each counter is a line in the table
 		#list of lists method
 		splitc = re.findall('.', c) #splits c after a single position
@@ -119,7 +124,7 @@ with open(args.Output_files_directory_and_name + '.error counts' + '.txt', 'w') 
 		ec.write('\t'.join(row)) #tab separated 
 		ec.write('\n')
 
-with open(args.Output_files_directory_and_name + '.flanking counts' + '.txt', 'w') as fc:
+with open(args.Output_files_directory_and_name + '.flanking count' + '.txt', 'w') as fc:
 	#count flanks table
 	scfcounter=OrderedDict(reversed(sorted(cfcounter.items(), key=lambda t: t[1]))) #don't get, descending value
 	for k in scfcounter: 
@@ -133,7 +138,13 @@ with open(args.Output_files_directory_and_name + '.flanking counts' + '.txt', 'w
 		fc.write('\t'.join(row)) 
 		fc.write('\n')
 
-with open(args.Output_files_directory_and_name + '.sequences of flanks length counts' + '.txt', 'w') as flc:
+with open(args.Output_files_directory_and_name + '.sequences of flank length count' + '.txt', 'w') as flc:
+	flc.write('Frag'+'\t'+'No.')
+	sflcounter=OrderedDict(reversed(sorted(flcounter.items(), key=lambda t: t[1])))
+	for f in sflcounter:
+		flc.write('\n')
+		flc.write(f + '\t' + str(sflcounter[f]))
+	#should this be in diff file? cause compare with flank table
 
-#NEXT: run in cmd line, go over
+#NEXT: go over
 #analyse results

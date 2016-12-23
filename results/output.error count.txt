@@ -1,0 +1,13 @@
+Dif	Con	No.
+G	A	124
+A	T	90
+G	C	72
+C	G	77
+T	G	195
+C	T	139
+G	T	125
+A	C	134
+T	C	161
+A	G	150
+T	A	125
+C	A	88
