@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"outp",
+				"output_flank"
+			],
+			[
 				"error",
 				"errorno"
 			]
@@ -15,7 +19,7 @@
 			"file": "errors.py",
 			"settings":
 			{
-				"buffer_size": 4794,
+				"buffer_size": 6439,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -24,7 +28,7 @@
 			"file": "flank table.txt",
 			"settings":
 			{
-				"buffer_size": 27379,
+				"buffer_size": 78049030,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -33,7 +37,7 @@
 			"file": "Count of error types table.txt",
 			"settings":
 			{
-				"buffer_size": 20954,
+				"buffer_size": 75172,
 				"line_ending": "Windows"
 			}
 		}
@@ -95,9 +99,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Julia/Documents/GitHub/error-profiles/.gitignore",
 		"/C/Users/Julia/Documents/GitHub/error-profiles/flank table.txt",
 		"/C/Users/Julia/Documents/GitHub/error-profiles/output.txt",
-		"/C/Users/Julia/Documents/GitHub/error-profiles/.gitignore",
 		"/C/Users/Julia/Documents/GitHub/error-profiles/ST error profiles.sublime-project"
 	],
 	"find":
@@ -133,7 +137,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -142,15 +146,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4794,
+						"buffer_size": 6439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								477,
-								477
+								2019,
+								2019
 							]
 						],
 						"settings":
@@ -159,10 +163,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 957.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -171,43 +175,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27379,
+						"buffer_size": 78049030,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								268,
-								268
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 42519.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Count of error types table.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20954,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15640,
-								15640
+								0,
+								0
 							]
 						],
 						"settings":
@@ -219,6 +195,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Count of error types table.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 75172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75016,
+								75025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -257,7 +261,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 215.0
+		"height": 39.0
 	},
 	"output.find_results":
 	{
@@ -305,7 +309,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 218.0,
+	"side_bar_width": 294.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
