@@ -40,8 +40,8 @@ seqsize = 2*flankno+1
 
 with contextlib.ExitStack() as stack: #all files open in exit stack will be closed after with statement, future attempts to open won't work, keeps file open for length of with, won't be closed in next loop, so don't have to open again in every loop
 	if args.output_flank:
-		eft = stack.enter_context(open(args.output_files_direct + '.flankings' + '.txt', 'w'))
-		eft.write('Seq Number\tDiff Number\tError Number\tPrev Seq\tDifference\tConcensus\tPost Seq\n')
+		eft = stack.enter_context(open(args.output_files_direct + '.flankings' + '.csv', 'w'))
+		eft.write('Seq Number\tDiff Number\tError Number\tPrev Seq\tDifference\tConsensus\tPost Seq\n')
 
 	with gzip.open(filename, 'rt') as f:	
 		for i, line in enumerate(f, 1):
@@ -99,18 +99,18 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 									cfcounter[prev+' '+' '+'  ']+=1
 									cfcounter['  '+' '+' '+post]+=1
 
-with open(args.output_files_direct + '.nts' + '.txt', 'w') as nc: #w means write, output will print to file instead of console, global 
+with open(args.output_files_direct + '.nts' + '.csv', 'w') as nc: #w means write, output will print to file instead of console, global 
 	nc.write('Nucleotide\tNumber\nA\t%d\nC\t%d\nG\t%d\nT\t%d\n' % (acount, ccount, gcount, tcount)) #dno how to order by value
 
-with open(args.output_files_direct + '.errors' + '.txt', 'w') as ec: 
-	ec.write('Difference\tConcensus\tNumber') #tab separated 
+with open(args.output_files_direct + '.errors' + '.csv', 'w') as ec: 
+	ec.write('Difference\tConsensus\tNumber') #tab separated 
 	scounter = sorted(counter.items(), key=itemgetter(1), reverse=True) #at this point only 2 cols in counter, e.g. AC 5
 	#list of tuples, c is ('AA', 70)
 	for c in scounter: #each counter is a line in the table
 		splitc = re.findall('.', c[0]) #splits c after a single position
 		ec.write('\n%s\t%s\t%d' % (splitc[0], splitc[1], c[1])) #list indice ,must be int or slice not str, but dict??
 
-with open(args.output_files_direct + '.flankings_counts' + '.txt', 'w') as fc:
+with open(args.output_files_direct + '.flankings_counts' + '.csv', 'w') as fc:
 	#count flanks table
 	fc.write('Prev Seq\tDifference\tConsensus\tPost Seq\tNumber')
 	scfcounter = sorted(cfcounter.items(), key=itemgetter(1), reverse=True) #items sorts rows as one, reverse descending
@@ -119,7 +119,7 @@ with open(args.output_files_direct + '.flankings_counts' + '.txt', 'w') as fc:
 			k[0][flankno+1:flankno+2], k[0][flankno+2:2*flankno+2], k[1]))
 		#printing with extra notation
 
-with open(args.output_files_direct + '.seq_fragments' + '.txt', 'w') as flc:
+with open(args.output_files_direct + '.seq_fragments' + '.csv', 'w') as flc:
 	flc.write('Fragment\tNumber')
 	sflcounter = sorted(flcounter.items(), key=itemgetter(1), reverse=True)#just use sort, don't need ordereddict
 	#sorts all items/rows together?
