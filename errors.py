@@ -99,6 +99,9 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 									cfcounter[prev+' '+' '+'  ']+=1
 									cfcounter['  '+' '+' '+post]+=1
 
+with open(args.output_files_direct + '.other' + '.txt', 'w') as other:
+	other.write('flankno\n%d' % (flankno))
+
 with open(args.output_files_direct + '.nts' + '.txt', 'w') as nc: #w means write, output will print to file instead of console, global 
 	nc.write('Nucleotide\tNumber\nA\t%d\nC\t%d\nG\t%d\nT\t%d\n' % (acount, ccount, gcount, tcount)) #dno how to order by value
 
