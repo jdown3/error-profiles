@@ -9,7 +9,7 @@ from operator import itemgetter #operator module has itemgetter for sorting outp
 parser = argparse.ArgumentParser() #create an argument parser, need descript in brackets?\
 parser.add_argument('file_direct', type=str, 
 	help='what is the directory for the input file of sequences? Must be a .gz file.')
-parser.add_argument('--flank', '-f', type=int, default=2, 
+parser.add_argument('--flank', '-f', type=int, default=3, 
 	help='how many nucleotides before and after the error position do you want to record? Default is 2.')
 parser.add_argument('output_files_direct', type=str, 
 	help='where do you want the output files to be stored and their name begin with?')
@@ -74,16 +74,16 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 									errorno+=1 #counts diffs for each diffsline 
 									#go back and get chars, shorter way? slices
 									if posno == 0: # == checks if two things have the same value
-										prev = '  '
+										prev = ' '*flankno
 										post = seq[posno+1:(posno+1+flankno)] #slicing is inclusive of bounds, if flankno 2, like saying 1:2
-									elif posno+1<=flankno: 
-										prev = ' '+seq[:posno]
+									elif posno+1<=flankno: #doesn't go here if flankno=1?
+										prev = ' '*flankno+seq[:posno]
 										post = seq[posno+1:(posno+1+flankno)]
 									elif len(seq)-1 == posno: #-1 to manage offset, make same as posno, start at 0
-										post = '  ' #2 spaces 
+										post = ' '*flankno #2 spaces, now no spaces
 										prev = seq[posno-flankno:posno]	
 									elif posno+1>(len(seq)-flankno): #+1 to make it same as flankno, starting at 1
-										post = seq[posno+1:]+' '
+										post = seq[posno+1:]+' '*flankno
 										prev = seq[posno-flankno:posno]
 									else:
 										prev = seq[posno-flankno:posno]
@@ -92,12 +92,12 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 											#write each current var. then forget
 											eft.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (seqno, diffno, errorno, prev, l, cons, post))
 									#increment counter for that error seq
-									cfcounter[prev+l+cons+post]+=1
-									cfcounter[prev+l+cons+'  ']+=1
-									cfcounter['  '+l+cons+post]+=1
-									cfcounter[prev+' '+' '+post]+=1
-									cfcounter[prev+' '+' '+'  ']+=1
-									cfcounter['  '+' '+' '+post]+=1
+									cfcounter[prev+l+cons+post]+=1 #flankno=1, 1 space
+									cfcounter[prev+l+cons+' '*flankno]+=1
+									cfcounter[' '*flankno+l+cons+post]+=1
+									cfcounter[prev+' '*flankno+' '*flankno+post]+=1 
+									cfcounter[prev+' '*flankno+' '*flankno+' '*flankno]+=1
+									cfcounter[' '*flankno+' '*flankno+' '*flankno+post]+=1 
 
 with open(args.output_files_direct + '.other' + '.txt', 'w') as other:
 	other.write('flankno\n%d' % (flankno))
@@ -121,6 +121,7 @@ with open(args.output_files_direct + '.flankings_counts' + '.txt', 'w') as fc:
 		fc.write('\n%s\t%s\t%s\t%s\t%d' % (k[0][0:flankno], k[0][flankno:flankno+1], 
 			k[0][flankno+1:flankno+2], k[0][flankno+2:2*flankno+2], k[1]))
 		#printing with extra notation
+
 
 with open(args.output_files_direct + '.seq_fragments' + '.txt', 'w') as flc:
 	flc.write('Fragment\tNumber')
