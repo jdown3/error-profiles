@@ -77,13 +77,13 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 										prev = ' '*flankno
 										post = seq[posno+1:(posno+1+flankno)] #slicing is inclusive of bounds, if flankno 2, like saying 1:2
 									elif posno+1<=flankno: #doesn't go here if flankno=1?
-										prev = ' '*flankno+seq[:posno]
+										prev = ' '*posno+seq[:posno]
 										post = seq[posno+1:(posno+1+flankno)]
 									elif len(seq)-1 == posno: #-1 to manage offset, make same as posno, start at 0
 										post = ' '*flankno #2 spaces, now no spaces
 										prev = seq[posno-flankno:posno]	
 									elif posno+1>(len(seq)-flankno): #+1 to make it same as flankno, starting at 1
-										post = seq[posno+1:]+' '*flankno
+										post = seq[posno+1:]+' '*(len(seq)-1-posno)
 										prev = seq[posno-flankno:posno]
 									else:
 										prev = seq[posno-flankno:posno]
@@ -95,9 +95,9 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 									cfcounter[prev+l+cons+post]+=1 #flankno=1, 1 space
 									cfcounter[prev+l+cons+' '*flankno]+=1
 									cfcounter[' '*flankno+l+cons+post]+=1
-									cfcounter[prev+' '*flankno+' '*flankno+post]+=1 
-									cfcounter[prev+' '*flankno+' '*flankno+' '*flankno]+=1
-									cfcounter[' '*flankno+' '*flankno+' '*flankno+post]+=1 
+									cfcounter[prev+' '+' '+post]+=1 
+									cfcounter[prev+' '+' '+' '*flankno]+=1
+									cfcounter[' '*flankno+' '+' '+post]+=1 
 
 with open(args.output_files_direct + '.other' + '.txt', 'w') as other:
 	other.write('flankno\n%d' % (flankno))
