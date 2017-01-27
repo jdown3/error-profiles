@@ -34,6 +34,7 @@ flankno = args.flank
 
 diffs = []
 
+fcounter = defaultdict(int)
 cfcounter = defaultdict(int) #counting flanks
 flcounter = defaultdict(int) #counting seg frags of flank length
 seqsize = 2*flankno+1
@@ -98,6 +99,7 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 									cfcounter[prev+' '+' '+post]+=1 
 									cfcounter[prev+' '+' '+' '*flankno]+=1
 									cfcounter[' '*flankno+' '+' '+post]+=1 
+									fcounter[prev+l+cons+post]+=1
 
 with open(args.output_files_direct + '.other' + '.txt', 'w') as other:
 	other.write('flankno\n%d' % (flankno))
@@ -122,6 +124,13 @@ with open(args.output_files_direct + '.flankings_counts' + '.txt', 'w') as fc:
 			k[0][flankno+1:flankno+2], k[0][flankno+2:2*flankno+2], k[1]))
 		#printing with extra notation
 
+with open(args.output_files_direct + '.flankings_counts_single' + '.txt', 'w') as fc:
+	#count flanks table
+	fc.write('Prev Seq\tDifference\tConsensus\tPost Seq\tNumber')
+	fcounter = sorted(fcounter.items(), key=itemgetter(1), reverse=True) #items sorts rows as one, reverse descending
+	for k in fcounter:  #len is 6 elements 
+		fc.write('\n%s\t%s\t%s\t%s\t%d' % (k[0][0:flankno], k[0][flankno:flankno+1], 
+			k[0][flankno+1:flankno+2], k[0][flankno+2:2*flankno+2], k[1]))
 
 with open(args.output_files_direct + '.seq_fragments' + '.txt', 'w') as flc:
 	flc.write('Fragment\tNumber')
