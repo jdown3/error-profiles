@@ -19,16 +19,7 @@
 			"file": "errors.py",
 			"settings":
 			{
-				"buffer_size": 6439,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "flank table.txt",
-			"settings":
-			{
-				"buffer_size": 78049030,
+				"buffer_size": 7431,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -99,8 +90,8 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Julia/Documents/GitHub/error-profiles/.gitignore",
 		"/C/Users/Julia/Documents/GitHub/error-profiles/flank table.txt",
+		"/C/Users/Julia/Documents/GitHub/error-profiles/.gitignore",
 		"/C/Users/Julia/Documents/GitHub/error-profiles/output.txt",
 		"/C/Users/Julia/Documents/GitHub/error-profiles/ST error profiles.sublime-project"
 	],
@@ -146,15 +137,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6439,
+						"buffer_size": 7431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2019,
-								2019
+								4772,
+								4772
 							]
 						],
 						"settings":
@@ -163,7 +154,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 957.0,
+						"translation.y": 2262.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -171,34 +162,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "flank table.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 78049030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "Count of error types table.txt",
 					"semi_transient": false,
 					"settings":
@@ -222,7 +185,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -261,7 +224,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 39.0
+		"height": 110.0
 	},
 	"output.find_results":
 	{
@@ -309,7 +272,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 294.0,
+	"side_bar_width": 92.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

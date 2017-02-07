@@ -84,7 +84,7 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 										post = ' '*flankno #2 spaces, now no spaces
 										prev = seq[posno-flankno:posno]	
 									elif posno+1>(len(seq)-flankno): #+1 to make it same as flankno, starting at 1
-										post = seq[posno+1:]+' '*(len(seq)-1-posno)
+										post = seq[posno+1:]+' '*(flankno-(len(seq)-posno-1)) #-1 excludes itself
 										prev = seq[posno-flankno:posno]
 									else:
 										prev = seq[posno-flankno:posno]
@@ -94,11 +94,13 @@ with contextlib.ExitStack() as stack: #all files open in exit stack will be clos
 											eft.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (seqno, diffno, errorno, prev, l, cons, post))
 									#increment counter for that error seq
 									cfcounter[prev+l+cons+post]+=1 #flankno=1, 1 space
-									cfcounter[prev+l+cons+' '*flankno]+=1
+									cfcounter[prev+l+cons+' '*flankno]+=1 #don't need these? can just subset and select in R? afraid I may be doubling up
 									cfcounter[' '*flankno+l+cons+post]+=1
 									cfcounter[prev+' '+' '+post]+=1 
-									cfcounter[prev+' '+' '+' '*flankno]+=1
+									cfcounter[prev+' '+' '+' '*flankno]+=1 #counter for just prev
 									cfcounter[' '*flankno+' '+' '+post]+=1 
+									cfcounter[prev+l+' '+post]+=1 #for pdp plot
+									cfcounter[prev+' '+cons+post]+=1 #for pcp
 									fcounter[prev+l+cons+post]+=1
 
 with open(args.output_files_direct + '.other' + '.txt', 'w') as other:
