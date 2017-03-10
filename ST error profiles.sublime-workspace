@@ -19,7 +19,7 @@
 			"file": "errors.py",
 			"settings":
 			{
-				"buffer_size": 7431,
+				"buffer_size": 7461,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -137,15 +137,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7431,
+						"buffer_size": 7461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4772,
-								4772
+								3286,
+								3286
 							]
 						],
 						"settings":
@@ -154,7 +154,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2262.0,
+						"translation.y": 473.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
